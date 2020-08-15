@@ -1,0 +1,38 @@
+{
+	"extends": ["react-app", "airbnb", "plugin:react/recommended", "plugin:prettier/recommended"],
+	"plugins": ["prettier"],
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"paths": ["src"],
+				"extensions": [".js", ".jsx"]
+			}
+		}
+	},
+	"rules": {
+		"prettier/prettier": "error",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never"
+			}
+		],
+		"import/prefer-default-export": [0],
+		"no-nested-ternary": [0],
+		"no-prototype-builtins": [0],
+		"no-shadow": [0],
+		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+		"react/prop-types": [0],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+		"react/jsx-closing-bracket-location": [
+			1,
+			{ "selfClosing": "line-aligned", "nonEmpty": "after-props" }
+		],
+		"react/jsx-props-no-spreading": [0],
+		"react/jsx-curly-newline": [0],
+		"react/button-has-type": [0]
+	}
+}
